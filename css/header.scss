@@ -1,0 +1,113 @@
+//Header Section
+.header-section{
+    padding: 56px 100px 0 100px;
+    background-image: url('../images/Ellipse\ 9.png');
+    background-position: right top;
+    background-repeat: no-repeat; 
+}
+
+//Navbar
+.navbar img{
+    float:left;
+    margin: 6px 12px 4px 0;
+}
+
+nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    ul{
+        @include ulcon;
+    }
+    li{
+        display: inline;
+        margin: 6px 40px 6px 0; 
+        @include font($font2, 600, 16px);
+        color: $color1;
+        line-height: 28px;
+    }
+}
+
+li{
+    button{
+        padding: 8px 40px;
+        @include btnborder(2px, solid, $color1, 24px);
+        @include font($font2, 700, 16px);
+        line-height: 28px;
+    }
+}
+
+//Content below navbar
+.content{
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.template-ad{
+    width: 601px;
+    margin: 26.25px 0;
+}
+
+.ad-title{
+    padding-top: 40px;
+    @include font($font1, 600, 48px);
+    line-height: 72px;;
+    color: #000000;
+}
+
+.ad-content{
+    margin-top: 16px;
+    margin-bottom: 49px;
+    @include font($font2, 400, 16px);
+    line-height: 28px;
+    color: #777777;
+}
+
+.btn-buy{
+    width: 247px;
+    height: 60px;
+    margin-right: 24px;
+    @include btnborder($radius: 56px);
+    @include bgcolor($color1);
+    color: $color2;
+    @include font($font2, 700, 20px);
+    line-height: 28px;
+}
+
+.btn-explore{
+    width: 187px;
+    height: 60px;
+    color: $color1;
+    @include font($font2, 700, 20px);
+    line-height: 28px;
+    @include btnborder($radius: 56px);
+}
+
+.graphs-section{
+    float:right;
+}
+
+.row{
+    width: 100%;
+    height: 49px;
+    margin: 95px 0 87px 41px;
+    display: inline-flex;
+    justify-content: space-around;
+    overflow: hidden;
+    ul{
+        @include ulcon;
+    }
+    li{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 56px;
+        @include font($font1, 700, 37px);
+        line-height: 28px;
+        img{
+            margin: 5px 10px 3px 0;
+        }
+    }
+}

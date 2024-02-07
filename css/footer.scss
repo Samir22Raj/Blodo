@@ -1,0 +1,97 @@
+.newsletter{
+    margin: 0 100px;
+    padding: 72px 242px;
+    background: url('../images/Mask Group.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include bgcolor($color1);
+    border-radius: 12px;
+}
+
+.newsletter-content{
+    @include font($font1, 400, 48px);
+    line-height: 72px;
+    text-align: center;
+    color: $color2;
+    margin-bottom: 48px;
+}
+
+.subcribe{
+    form{
+        display: flex;
+        justify-content: center;
+        #ns-email{
+            margin-right: 24px;
+            width: 370px;
+            border-radius: 240px;
+            @include font($font2, 400, 20px);
+            line-height: 32px;
+            text-align: center;
+            color: #000000;
+        }
+        #newsletter-subcribe{
+            padding: 16px 56px;
+            @include bgcolor($color3);
+            @include btnborder(2px, solid, $color3, 56px);
+            @include font($font2, 700, 20px);
+            color: $color1;
+            line-height: 28px;
+        }
+    }
+}
+
+.footer-main{
+    display: flex;
+    justify-content: center;
+}
+
+.about{
+    margin: 100px 0 110px 100px;
+    img{
+        margin-bottom: 40px;
+    }
+    .desc{
+        @include font($font2, 400,16px);
+        width: 300px;
+        line-height: 28px;
+        color: #777777;
+    }
+    .reserved{
+        margin-top: 64px;
+        @extend .desc;
+    }
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    margin: 100px 0 100px 180px;
+    float: right;
+    ul{
+        @include ulcon;
+        margin-right: 96px;
+        li:nth-child(1){
+            @include font($font2, 700, 20px);
+            color: #000000;
+        }
+        li{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 32px;
+            color: #777777;
+            @include font($font2, 400, 20px);
+            line-height: 32px;
+            span{
+                padding: 1px 14px;
+                @include bgcolor($color3);
+                border-radius: 120px;
+                @include font($font2, 700, 13px);
+                margin-left: 12px;
+                line-height: 28px;
+                color: $color1;
+            }
+        }
+    }
+}

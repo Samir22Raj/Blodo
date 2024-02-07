@@ -1,0 +1,109 @@
+//Blog Section
+.blog{
+    padding: 150px 200px 128px;
+    height: auto;
+}
+
+.blog-title-min{
+    @include font($font2, 400,20px);
+    line-height: 32px;
+    color: #777777;
+    text-align: center;
+}
+
+.blog-title-content{
+    width: 100%;
+    @include font($font1, 400, 48px);
+    line-height: 72px;
+    color: #000000;
+    text-align: center;
+}
+
+.blogs{
+    margin-top: 80px;
+    margin-bottom: 84px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.article{
+    width: 298px;
+    height: 424px;
+    padding: 0;
+}
+
+#flag{
+    width: 100%;
+    height: 209px;
+    border-radius: 24px;
+    margin: 0;
+}
+
+.container{
+ margin-top: 24px;
+ padding: 0;
+ width: 344px;
+ height: auto;
+ @include font($font2, 400, 16px);
+}
+
+.heading{
+margin-bottom: 12px;
+box-sizing: content-box;
+}
+
+.heading > span{
+    font-weight: 700;
+    margin: 0;
+    margin-right: 12px;
+    color: #0A2640;
+    line-height: 28px;
+}
+
+.date{
+    margin: 0;
+    display: inline-block;
+    color:#777777;
+    @include font($font2, 400,16px);
+    line-height: 28px;
+}
+
+.text{
+    line-height: 32px;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 12px;
+    height: auto;
+}
+
+.blog-main{
+    padding: 0 44px 20px 0;
+}
+
+.lower{
+    height: 32px;
+}
+
+.lower > img{
+    float: left;
+    margin-right: 12px;
+}
+
+.lower > span{
+    height: 28px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.load-more-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 84px;
+    button{
+        padding: 16px 56px;
+        @include btnborder(2px, solid, $color1, 56px);
+        @include font($font2, 700, 20px);
+        line-height: 28px;
+    }
+}

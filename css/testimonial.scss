@@ -1,0 +1,55 @@
+
+//Testimonial Section
+.testimonial-section{
+    @include bgcolor($color1);
+    width: 100%;
+    padding: 100px 100px 0 150px;
+}
+
+.testimonial-heading{
+    @include bgcolor($color1);
+    color: $color2;
+    line-height: 72px;
+    @include font($font1, 400, 48px);
+}
+
+.testimonial-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 73px 0 95px 0;
+}
+
+.testimonial{
+    width: 350px;
+    height: auto;
+    margin-right: 40px;
+    font-family: $font2;
+    @include bgcolor($color2);
+    border-radius: 12px;
+}
+
+.testimonial > p{
+    margin: 40px;
+    @include font($font2, 400, 24px);
+    line-height: 36px;
+}
+
+.author{
+    margin: 40px;
+    color: $color1;
+}
+.author > img{
+    float:left;
+    margin-right: 16px;
+}
+.author-name{
+    @include font($font2, 700, 16px);
+    margin-top: 3px;;
+    margin-bottom: 6px;
+    line-height: 22px;
+}
+
+.author-post{
+    @include font($font2, 400, 14px);
+    line-height: 22px;
+}

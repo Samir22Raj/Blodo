@@ -1,0 +1,63 @@
+//Services Section
+.our-services{
+    @include bgcolor($color1);
+    padding: 84px 150px 84px;
+}
+
+.services-container{
+    padding: 0 130px 72px;
+}
+
+.services-title{
+    @include font($font2, 400, 20px);
+    margin-top: 2px;
+    margin-bottom: 12px;
+    color: #f1f1f1;
+    line-height: 32px;
+    text-align: center;
+}
+
+.services-brief{
+    @include font($font1, 400, 48px);
+    line-height: 72px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.services-display{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 100 100 0;
+}
+
+.service:nth-child(1){
+    margin-left: 6px;
+}
+
+.service-body{
+    margin-top: 24px;
+    color: $color2;
+}
+
+.service-name{
+    @include font($font2, 400, 20px);
+    margin-bottom: 28px;
+    line-height: 36px;
+}
+
+.service-link{
+    line-height: 36px;
+    a {
+        color:$color2;
+        @include font($font2, 700, 20px);
+        text-decoration: none;
+        display: flex;
+        align-content: baseline;
+    }
+    img {
+        margin: 5px 0 5px 12px;
+    }
+    hr{
+        width: 164px;
+    }
+}

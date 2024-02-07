@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixin";
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+}
+
+@import "header";
+@import "services";
+@import "connect";
+@import "testimonial";
+@import "blog";
+@import "footer";
