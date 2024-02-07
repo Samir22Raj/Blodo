@@ -106,10 +106,10 @@
 
 .option:hover{
     @include bgcolor($color1);
-    p{
-        color: #ffffff;
-    }
     img{
         filter: invert(100%);
+    }
+    p{
+        color: #ffffff !important;
     }
 }

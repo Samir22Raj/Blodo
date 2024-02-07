@@ -326,11 +326,11 @@ p, .con2 .connect-content, .con1 .connect-content {
 .option:hover {
   background-color: #0A2640;
 }
-.option:hover p, .option:hover .con1 .connect-content, .con1 .option:hover .connect-content, .option:hover .con2 .connect-content, .con2 .option:hover .connect-content {
-  color: #ffffff;
-}
 .option:hover img {
   filter: invert(100%);
+}
+.option:hover p, .option:hover .con1 .connect-content, .con1 .option:hover .connect-content, .option:hover .con2 .connect-content, .con2 .option:hover .connect-content {
+  color: #ffffff !important;
 }
 
 .testimonial-section {
