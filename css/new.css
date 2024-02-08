@@ -212,7 +212,7 @@ li button {
 }
 
 .connect {
-  padding: 120px 107px 0 160px;
+  padding: 120px 107px 180px 160px;
 }
 
 p, .con2 .connect-content, .con1 .connect-content {
@@ -274,7 +274,6 @@ p, .con2 .connect-content, .con1 .connect-content {
 
 .con2 {
   margin-top: 120px;
-  margin-bottom: 180px;
   display: flex;
   justify-content: center;
 }
@@ -395,6 +394,48 @@ p, .con2 .connect-content, .con1 .connect-content {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
+}
+
+.connect2 {
+  padding: 120px 150px 0 120px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.con-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 56px;
+}
+.con-content .large {
+  margin-right: 100px;
+  width: 550px;
+}
+
+.acc {
+  margin-bottom: 32px;
+}
+
+.con-acc {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 550px;
+  height: 54px;
+}
+.con-acc p, .con-acc .con1 .connect-content, .con1 .con-acc .connect-content, .con-acc .con2 .connect-content, .con2 .con-acc .connect-content {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+}
+.con-acc img {
+  float: right;
+  width: 28px;
+  height: 28px;
 }
 
 .blog {

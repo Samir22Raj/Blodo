@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.main {
+				display: block;
+				position: relative;
+				padding-left: 45px;
+				margin-bottom: 15px;
+				cursor: pointer;
+				font-size: 20px;
+				font-family: sans-serif;
+				color: gray;
+				line-height: 30px;
+			}
+			/* Hiding the initial checkbox */
+			input[type="checkbox"] {
+				visibility: hidden;
+			}
+			/* Creating a custom checkbox based on demand */
+			.w3docs {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 25px;
+				width: 25px;
+				border: 2px solid #e4e5e5;
+			}
+			/* Specify the background color to be shown when hovering over checkbox */
+			/* Specify the background color to be shown when checkbox is active */
+			.main input:active ~ .w3docs {
+				background-color: white;
+			}
+			/* Specify the background color to be shown when checkbox is checked */
+			.main input:checked ~ .w3docs {
+				background-color: orange;
+			}
+			/* Checkmark to be shown in checkbox */
+			/* It is not be shown when not checked */
+			.w3docs:after {
+				content: "";
+				position: absolute;
+				display: none;
+			}
+			/* Display checkmark when checked */
+			.main input:checked ~ .w3docs:after {
+				display: block;
+			}
+			/* Styling the checkmark using webkit */
+			/* Rotated the rectangle by 45 degree and 
+			showing only two border to make it look
+			like a tickmark */
+			.main .w3docs:after {
+				left: 8px;
+				bottom: 5px;
+				width: 6px;
+				height: 12px;
+				border: solid white;
+				border-width: 0 4px 4px 0;
+				-webkit-transform: rotate(45deg);
+				-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Learn to design and build professional website</h1>
+		<label class="main"
+			>Label
+			<input type="checkbox" />
+			<span class="w3docs"></span>
+		</label>
+		<label class="main"
+			>Label
+			<input type="checkbox" checked="checked" />
+			<span class="w3docs"></span>
+		</label>
+	</body>
+</html>

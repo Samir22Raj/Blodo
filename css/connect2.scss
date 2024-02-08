@@ -1,0 +1,42 @@
+//Connect2 Section
+.connect2{
+    padding: 120px 150px 0 120px;
+}
+
+.image{
+    img{
+        width: 100%;
+    }
+}
+
+.con-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 56px;
+    .large{
+        margin-right: 100px;
+        width: 550px;
+    }
+}
+
+.acc{
+    margin-bottom: 32px;
+}
+
+.con-acc{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 550px;
+    height: 54px;
+    p{
+        @include font($font2, 400, 20px);
+        line-height: 32px;
+        color: #000000;
+    }
+    img{
+        float: right;
+        width: 28px;
+        height: 28px;
+    }
+}
